@@ -1,0 +1,280 @@
+<html>
+  <head>
+      <style>
+          *{
+              margin:0px;
+              padding: 0px;
+              box-sizing: box-border;
+          }
+          body{
+              background: lightgray;
+          }
+          header{
+              width: 100%;
+              display: flex;
+              background-color: black;
+              font-size: 30px;
+              color: white;
+              padding: 20px 50px;
+              align-items: center;
+              justify-content: space-between;
+          }
+          .Nav a{
+              color: white;
+              text-decoration: none;
+              font-weight: bold;
+              font-size: 40px;
+              margin-left: 30px;
+          }
+          .nav a:hover{
+              color: black;
+              background: white;
+              transition: .2s linear;
+          }
+          .container{
+              margin:50px;
+              height: 5000px;
+              background:white;
+              align-items: center;
+              width: 100%;
+              position: relative;
+          }
+          .container h1{
+              text-align: center;
+              margin-right: -10px;
+              font-size: 90px;
+              font-weight: bold;                       
+              color: black;
+          }
+          .container .items img{
+              display:block;
+              margin-right:auto;
+              margin-left: auto;
+          }
+          .container .items h2{
+              font-size: 50px;
+              position:absolute;
+              left: 30px;
+          }
+          .container .items p{
+              font-size: 30px;
+              padding: 50px;
+          }
+          .container .items button{            
+              margin-left:390px;
+              width:200;
+              height: 50px;
+              font-size: 20px;
+              background: black;
+              color: white;
+              cursor:pointer;
+          }
+          .container .items button:hover{
+              background: white;
+              color: black;
+              transition: .2s linear;
+          }
+          .container .items img{
+              border-radius: 10px; 
+               transition: .2s linear;              
+          }
+          .container .items img:hover{
+              transform: scale(1.1);
+          }
+          .container .popup-image{
+              position:fixed;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background: rgb(0,0,0,.9);
+              display:none;
+          }
+          .container .popup-image span{
+             position: fixed;
+             right:10px; 
+             top: 0;
+             font-size:80px;
+             font-weight: bold;
+             color: white;
+             cursor: pointer;    
+          }
+          .container .popup-image img{
+              position: absolute;
+              top: 10%;
+              left: 13.5%;
+              transform: translate(-50%,-50%%)           
+          }
+           @media (max-width:450px) {
+              html{
+                  font-size: 50%;
+              }
+              
+          }
+          @media (max-width:768px) {
+              .container .popup-image img{
+                  width: 95%;
+              }
+              header{
+                  display: block;
+              }
+              
+          }
+          .container .items table{
+              display: flex;
+              list-style:none;
+              padding: 50px;
+              font-size: 20px;
+              font-weight: bold;
+              width: 400px;
+          }
+          .container .table-box{
+              margin: 50px auto;
+          }
+          .container .table-row{
+              display: table;
+              width: 80%;
+              margin: 10px auto;
+              background: none;
+              padding: 12px 0;
+              color: #555;
+              box-shadow: 0 1px 4px;
+              font-size: 13px;
+          }
+          .container .table-row .table-cell{
+              display: table-cell;
+              width: 30%;
+              text-align:center;
+              padding: 4px 0;
+              vertical-align: middle;
+          }
+          a{
+              color: skyblue;
+          }
+      </style>
+  </head>
+  <body>
+    <header>
+        <h1>GabrielPH</h1>
+        <nav class="Nav">
+            <a href="#">About Me</a>
+            <a href="#">More Apps</a>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>TrebEdit</h1>
+        <div class="items">
+            <br><br>
+            <img src="images.png" width="300" height="300"></img>
+            <br><br><br>
+            <button onclick="location.href='https://www.mediafire.com/file/zrolezjzntqe4ts/TrebEdit_Gabriel.apk/file'">DOWNLOAD APK</button>
+            <br><br><br><br><br>
+            <h2>App Info:</h2>
+            <br><br><br>
+            <div class="table-box">
+            <div class="table-row">
+                <div class="table-cell">
+                    <p>App Download Version</p>
+                    </div>
+                    <div class="table-cell">
+                    <p>3.4.3</p>
+                    </div>
+                    
+            </div>
+            <div class="table-row">
+                <div class="table-cell">
+                    <p>Last Updated</p>
+                    </div>
+                    <div class="table-cell">
+                    <p>Nov 09, 2023</p>
+                    </div>
+                    
+            </div>
+            <div class="table-row">
+                <div class="table-cell">
+                    <p>App By</p>
+                    </div>
+                    <div class="table-cell">
+                    <p>Joel Etetafia</p>
+                    </div>
+                    
+            </div>
+            <div class="table-row">
+                <div class="table-cell">
+                    <p>Content Rating</p>
+                    </div>
+                    <div class="table-cell">
+                    <p>Everyone</p>
+                    </div>
+                    
+            </div>
+            <div class="table-row">
+                <div class="table-cell">
+                    <p>Support Android Version</p>
+                    </div>
+                    <div class="table-cell">
+                    <p>Anroid 21 and Above</p>
+                    </div>                                        
+            </div>
+            <div class="table-row">
+                <div class="table-cell">
+                    <p>Get it on</p>
+                    </div>
+                    <div class="table-cell">
+                    <p><a href="https://play.google.com/store/apps/details?id=com.teejay.trebedit">Google Play</a></p>
+                    </div>
+                    
+            </div>
+            </div>
+            <br><br><br><br><br>
+            <h2>About this app:</h2>
+            <br><br><br><br><br>
+            <p><u>TrebEdit</u> - Mobile HTML Editor apk content rating is Everyone and can be downloaded and installed on android devices supporting 21 api and above.
+<br><br>
+TrebEdit is an HTML editor for web design.
+<br><br>
+Start your web projects with TrebEdit and view your codes easily in our in-app browser(Html Viewer). <br><br>You can export your project to your device when your project is completed, or at any time that's best for you.
+<br><br>
+TrebEdit is not only just an HTML editor, but there is also a feature for you to get HTML codes or source codes from any website you like and simply save it as a new project or open it immediately in the text editor.
+<br><br>
+Are you starting your journey to web design? we have a feature for you to learn web design(HTML, CSS, JavaScript, PHP, and others). Also, as a developer, you can use this feature to quickly remember syntax and learn more skills.
+
+<br><br><br>
+Outlined Features :
+<br<
+- Text editor
+<br><br>
+- Html viewer
+<br>
+- JavaScript console
+<br>
+- Source code viewer
+<br>
+- Learn to code
+
+</p>
+            <br><br>
+            <h2>App Screenshots:</h2>
+            <br><br><br><br><br><br>
+            <img src="screenshot1.png" width="500" height="800"></img>
+            <br><br><br>
+            <img src="screenshot2.jpeg" width="500" height="800"></img>
+        </div>
+        <div class="popup-image">   
+            <span>&times;</span>  
+            <img src="screenshot1.png" width="800" height="1400"></img>
+        </div>
+    </div>
+    <script>
+        document.querySelectorAll('.container .items img').forEach(image =>{
+            image.onclick = () =>{
+                             document.querySelector('.popup-image').style.display = 'block';
+document.querySelector('.popup-image img').src = image.getAttribute('src');
+            }
+        });
+document.querySelector('.popup-image span').onclick = () =>{ 
+ document.querySelector('.popup-image').style.display = 'none';
+}   
+    </script>
+  </body>
+</html>
