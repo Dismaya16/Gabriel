@@ -61,7 +61,8 @@
               padding: 50px;
           }
           .container .items button{            
-              margin-left:390px;
+              display: block;
+              margin: auto;
               width:200;
               height: 50px;
               font-size: 20px;
@@ -105,18 +106,54 @@
               left: 13.5%;
               transform: translate(-50%,-50%%)           
           }
-           @media (max-width:450px) {
-              html{
-                  font-size: 50%;
+           @media (max-width:435px) {
+              .container .items img{
+                  width: 50px;
+                  height: 10px;
+              }
+              header{
+                  font-size:15px;
+              }
+              .Nav a{
+                  font-size: 10px;
+              }
+              .container{
+                  height: 6000px;
               }
               
           }
           @media (max-width:768px) {
+              .container .items .screenshot{
+                  width: 500px;
+                  height: 800px;
+              }
               .container .popup-image img{
-                  width: 95%;
+                  width: 580px;
+                  height: 900px;
               }
               header{
-                  display: block;
+                  font-size: 20px;
+              }
+              header .Nav a{
+                  font-size: 30px;
+              }
+              .container{
+                  height: 8000px;
+              }
+              
+          }
+          @media (max-width:1024px) {
+              .container .popup-image img{
+                  width: 770px;
+                  height: 1200px;
+              }
+              }
+              header
+              {
+                  font-size 30px;
+              }
+              .container{
+                  height: 5200px;
               }
               
           }
@@ -256,9 +293,9 @@ Outlined Features :
             <br><br>
             <h2>App Screenshots:</h2>
             <br><br><br><br><br><br>
-            <img src="screenshot1.png" width="500" height="800"></img>
+            <img src="screenshot1.png" width="500" height="800" class="screenshot"></img>
             <br><br><br>
-            <img src="screenshot2.jpeg" width="500" height="800"></img>
+            <img src="screenshot2.jpeg" width="500" height="800" class="screenshot"></img>
         </div>
         <div class="popup-image">   
             <span>&times;</span>  
